@@ -1,0 +1,30 @@
+3M* (NYSE:MMM)	1976
+American Express (NYSE:AXP)	1982
+Apple (NASDAQ:AAPL)	2015
+Boeing (NYSE:BA)	1987
+Caterpillar (NYSE:CAT)	1991
+Chevron* (NYSE:CVX)	2008
+Cisco (NASDAQ:CSCO)	2009
+Coca-Cola* (NYSE:KO)	1987
+The Walt Disney Company (NYSE:DIS)	1991
+DowDuPont (NYSE:DWDP)	2017
+ExxonMobil* (NYSE:XOM)	1928
+General Electric (NYSE:GE)	1907
+Goldman Sachs (NYSE:GS)	2013
+The Home Depot (NYSE:HD)	1999
+IBM (NYSE:IBM)	1979
+Intel (NASDAQ:INTC)	1999
+Johnson & Johnson* (NYSE:JNJ)	1997
+JPMorgan Chase (NYSE:JPM)	1991
+McDonald's* (NYSE:MCD)	1985
+Merck (NYSE:MRK)	1979
+Microsoft (NASDAQ:MSFT)	1999
+Nike (NYSE:NKE)	2013
+Pfizer (NYSE:PFE)	2004
+Procter & Gamble* (NYSE:PG)	1932
+Travelers Companies, Inc. (NYSE:TRV)	2009
+United Technologies (NYSE:UTX)	1939
+UnitedHealth (NYSE:UNH)	2012
+Verizon (NYSE:VZ)	2004
+Visa (NYSE:V)	2013
+Wal-Mart (NYSE:WMT)	1997
