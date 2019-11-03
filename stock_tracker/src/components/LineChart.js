@@ -5,11 +5,24 @@ import "./chart.css";
 
 class LineChart extends React.Component {
   render() {
+    var markers;
+    if (this.props.data.length > 0) {
+      markers = [
+        {
+          axis: "x",
+          anchor: "bottom-left",
+          //value: this.props.data[0]["data"][49]["x"],
+          lineStyle: { stroke: "#b0413e", strokeWidth: 0 },
+          legend: "XXX"
+        }
+      ];
+    }
     return (
       <div class="chart">
         <ResponsiveLine
           data={this.props.data}
           enablePoints={false}
+          markers={markers}
           lineWidth={1}
           margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
           xScale={{ type: "point" }}
@@ -17,10 +30,11 @@ class LineChart extends React.Component {
           axisTop={null}
           axisRight={null}
           axisBottom={{
+            tickValues: [],
             orient: "bottom",
             tickSize: 5,
             tickPadding: 5,
-            tickRotation: 0,
+            tickRotation: 45,
             legend: "Date",
             legendOffset: 36,
             legendPosition: "middle"

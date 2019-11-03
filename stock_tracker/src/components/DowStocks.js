@@ -11,9 +11,7 @@ class DowStocks extends React.Component {
 
   componentDidMount() {
     var stockPriceData = stockPrices;
-    console.log(stockPriceData);
     var lineData = [];
-    var oldLineData = [];
     for (let i = 0; i < stockPriceData.length; i++) {
       var firm = {};
       var firmData = [];
@@ -21,8 +19,7 @@ class DowStocks extends React.Component {
       firm["id"] = stockPriceData[i]["symbol"];
       firm["name"] = stockPriceData[i]["name"];
       firm["active"] = false;
-      firm["color"] = "hsl(150,50%,50%)";
-      for (let j = 0; j < stockPriceData[i]["days"].length; j++) {
+      for (let j = stockPriceData[i]["days"].length - 1; j >= 0; j--) {
         var dayData = {};
         dayData["x"] = stockPriceData[i]["days"][j];
         dayData["y"] = stockPriceData[i]["prices"][j];
@@ -31,10 +28,9 @@ class DowStocks extends React.Component {
       firm["key"] = i;
       firm["data"] = firmData;
       lineData.push(firm);
-      oldLineData.push(false);
     }
+
     this.setState({ lineData });
-    this.setState({ oldLineData });
   }
 
   toggleActiveFirms = (idNumber, id) => {
